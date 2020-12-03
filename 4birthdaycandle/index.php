@@ -3,25 +3,13 @@
 // work well in Hackerrank Project
 // example code
 $candles = [3,2,1,3];
-$hasil = sort($candles);
+function birthdayCakeCandles($candles) {
 
-for($i=0; $i<=$hasil $i++) {
-    echo $candles[$i];
-    echo '<br>';
-}
-
-// function birthdayCakeCandles($candles) {
 // Write your code here
 
-// for($i=0; $i<=$candles; $i++) {
+return array_count_values($candles)[max($candles)];
+}
 
-// $occurences = sort($candles);
-// return $occurences;
-// }
-// }
-
-// birthdayCakeCandles($candles);
-
-// print_r(birthdayCakeCandles($candles));
+echo birthdayCakeCandles($candles);
 
 ?>
